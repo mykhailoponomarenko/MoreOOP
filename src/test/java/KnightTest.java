@@ -14,6 +14,7 @@ public class KnightTest {
         character = new Knight();
     }
 
+    
     @Test
     public void testIsClass() {
         assertTrue(character instanceof Character);
