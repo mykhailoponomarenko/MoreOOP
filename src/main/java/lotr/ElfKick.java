@@ -1,5 +1,6 @@
 package lotr;
 
+
 public class ElfKick extends KickStrategy {
     @Override
     public void kick(Character first, Character second) {

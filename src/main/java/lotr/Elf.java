@@ -3,6 +3,7 @@ package lotr;
 import lombok.Getter;
 import lombok.Setter;
 
+
 @Setter
 @Getter
 public class Elf extends Character {

@@ -2,6 +2,7 @@ package lotr;
 
 import java.util.Random;
 
+
 public class CharacterFactory {
     public Character createCharacter() {
         Random r = new Random();

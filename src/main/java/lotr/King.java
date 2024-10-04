@@ -1,5 +1,6 @@
 package lotr;
 
+
 import java.util.Random;
 import lombok.Getter;
 import lombok.Setter;

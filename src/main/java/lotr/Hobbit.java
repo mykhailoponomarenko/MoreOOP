@@ -1,5 +1,6 @@
 package lotr;
 
+
 import lombok.Getter;
 import lombok.Setter;
 
