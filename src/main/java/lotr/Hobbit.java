@@ -8,8 +8,7 @@ import lombok.Setter;
 public class Hobbit extends Character {
 
     public Hobbit() {
-        this.power = 0;
-        this.hp = 3;
+        super(0, 3, new HobbitKick());
     }
     public void setHp(int value) {
         if (value < 0) {
@@ -20,12 +19,8 @@ public class Hobbit extends Character {
         }
     }
 
-    public void toCry() {
 
-    }
 
-    public void kick(Character c) {
-        toCry();
-    }
+
 
 }

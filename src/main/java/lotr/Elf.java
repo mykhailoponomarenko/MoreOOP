@@ -11,15 +11,22 @@ public class Elf extends Character {
 
     // }
     public Elf() {
-        this.power = 10;
-        this.hp = 10;
+        super(10, 10, new ElfKick());
     }
-
-    public void kick(Character c) {
-        if (c.power < this.power) {
-            c.hp = 0;
+    
+    public void setHp(int value) {
+        if (value < 0) {
+            this.hp = 0;
         } else {
-            c.power -= 1;
+            this.hp = value;
         }
     }
+
+    // public void kick(Character c) {
+    //     if (c.power < this.power) {
+    //         c.hp = 0;
+    //     } else {
+    //         c.power -= 1;
+    //     }
+    // }
 }

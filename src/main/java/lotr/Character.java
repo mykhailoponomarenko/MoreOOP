@@ -6,10 +6,19 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Character {
-    int power;
-    int hp;
+    public int power;
+    public int hp;
+    KickStrategy kick;
+
+    public Character(int power, int hp, KickStrategy kick) {
+        this.power = power;
+        this.hp = hp;
+        this.kick = kick;
+    }
 
     public void kick(Character c) {
+        kick.kick(this, c);
+
 
     }
 

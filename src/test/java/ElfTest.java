@@ -16,14 +16,17 @@ public class ElfTest {
     }
 
     @Test
-    public void testToString(){ assertEquals("Elf{hp=10, power=10}", character.toString());
+    public void testToString() {
+        assertEquals("Elf{hp=10, power=10}", character.toString());
     }
 
     @Test
     public void testKick() {
+
         Hobbit hobbit = new Hobbit();
+        System.out.println(character.power);
+        System.out.println(hobbit.power);
         character.kick(hobbit);
         assertEquals(0, hobbit.getHp());
     }
 }
-
